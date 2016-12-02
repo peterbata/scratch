@@ -12,7 +12,13 @@
             
                 @foreach($card->notes as $note)
                 
-                    <li class="list-group-item">{{$note->body }}</li>
+                    <li class="list-group-item">
+                        
+                        {{$note->body }}
+                        
+                        <a href ="#" style = "float: right">{{ $note->user->username }}</a>
+                        
+                    </li>
                 
                 @endforeach
                 
