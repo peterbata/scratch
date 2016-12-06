@@ -23,8 +23,6 @@ class CardsController extends Controller
         
         $card->load('notes.user');
         
-        
-            
         return view('cards.show', compact('card'));
         
     }
